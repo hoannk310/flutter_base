@@ -1,0 +1,125 @@
+name: flutter_base
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI
+  cupertino_icons: ^1.0.8
+
+  # Localization
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+
+  # Network
+  dio: ^5.8.0+1
+  retrofit: ^4.4.2
+
+  # Database
+  realm: ^20.0.1
+  flutter_secure_storage: ^9.2.4
+
+  # Logging
+  logger: any
+
+  # Modeling
+  json_annotation: ^4.9.0
+  freezed_annotation: ^2.4.4
+
+  # DI and State Management
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.6.1
+
+  # UI
+  cached_network_image: ^3.4.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  test: ^1.25.15
+  mockito: ^5.4.5
+
+  # Linter
+  flutter_lints: ^5.0.0
+
+  # Generator Runner
+  build_runner: ^2.4.15
+
+  # Network generator
+  retrofit_generator: ^9.1.9
+
+  # Model generator
+  json_serializable: ^6.8.0
+  freezed: ^2.4.7
+
+  # Generator for Riverpod
+  riverpod_generator: ^2.4.0
+  custom_lint: ^0.7.0
+  riverpod_lint: ^2.3.10
+
+  # Assets Generator
+  flutter_gen_runner: ^5.10.0
+
+  # FlutterGen configurations
+flutter_gen:
+  output: lib/res/gen
+  line_length: 80
+
+  # Optional
+  integrations:
+    image: true
+    flutter_svg: true
+    rive: true
+    lottie: true
+
+  colors:
+    inputs:
+      - assets/colors/colors.xml
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/images/
+
+  fonts:
+    - family: OpenSans
+      fonts:
+        - asset: assets/fonts/open-sans/OpenSans-Light.ttf
+          weight: 300
+        - asset: assets/fonts/open-sans/OpenSans-LightItalic.ttf
+          weight: 300
+          style: italic
+        - asset: assets/fonts/open-sans/OpenSans-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/open-sans/OpenSans-Italic.ttf
+          weight: 400
+          style: italic
+        - asset: assets/fonts/open-sans/OpenSans-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/open-sans/OpenSans-MediumItalic.ttf
+          weight: 500
+          style: italic
+        - asset: assets/fonts/open-sans/OpenSans-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/open-sans/OpenSans-SemiBoldItalic.ttf
+          weight: 600
+          style: italic
+        - asset: assets/fonts/open-sans/OpenSans-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/open-sans/OpenSans-BoldItalic.ttf
+          weight: 700
+          style: italic
+        - asset: assets/fonts/open-sans/OpenSans-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/open-sans/OpenSans-ExtraBoldItalic.ttf
+          weight: 800
+          style: italic
